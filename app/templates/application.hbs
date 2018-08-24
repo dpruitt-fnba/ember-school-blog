@@ -2,18 +2,18 @@
   <h1 class="page-title">My Blog</h1>
 
   <!-- Add Post Component -->
-  <form class="form card">
+  <form class="form card" onsubmit={{action "createPost"}}>
     <h3 class="form__title">New Blog Post</h3>
     <div class="form__group">
       <label class="form__label" for="post-title">Title</label>
-      <input type="text" class="form__input" id="post-title">
+      {{input value=newPostTitle class="form__input" id="post-title"}}
     </div>
     <div class="form__group">
       <label class="form__label" for="post-body">Body</label>
-      <textarea rows="10" class="form__input" id="post-body"></textarea>
+      {{textarea value=newPostBody class="form__input" id="post-body" rows="10"}}
     </div>
     <div class="form__controls">
-      <button>Create Post</button>
+      <button {{action "createPost"}}>Create Post</button>
     </div>
   </form>
 
