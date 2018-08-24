@@ -18,14 +18,15 @@
   </form>
 
   <!-- List of posts -->
-  <div class="post card">
-    <h3 class="post__title">Post Title</h3>
-    <div class="post__text">
-      <p>alksjdlkgsl glsd glsdgj sdofjs dfsodflsdf lsdfld</p>
-      <p> asdkjlsdkgasgkasjdlgkjasdlkjgalskdjglasdjls.s.s..sdlkjgsd lskd fjskdjf</p>
+  {{#each posts as |post|}}
+    <div class="post card">
+      <h3 class="post__title">{{post.title}}</h3>
+      <div class="post__text">
+        {{post.body}}
+      </div>
+      <div class="post__controls">
+        <button>Delete Post</button>
+      </div>
     </div>
-    <div class="post__controls">
-      <button>Delete Post</button>
-    </div>
-  </div>
+  {{/each}}
 </main>
