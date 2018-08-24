@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #CCC;
+  font-size: 16px;
+}
+
+main {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #FFF;
+  border: 1px solid #999;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.form__title {
+  margin: 0 0 .5rem 0;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: .25rem;
+}
+
+.form__group {
+  margin: .5rem 0;
+}
+
+.form__controls {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form__input {
+  width: 100%;
+}
+
+.post__title {
+  margin: 0 0 .5rem 0;
+}
+
+.post__controls {
+  display: flex;
+  justify-content: flex-end;
+}
