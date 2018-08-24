@@ -20,10 +20,8 @@
   <!-- List of posts -->
   {{#each posts as |post|}}
     <div class="post card">
-      <h3 class="post__title">{{post.title}}</h3>
-      <div class="post__text">
-        {{post.body}}
-      </div>
+      <h3 class="post__title">{{markdown-to-html post.title}}</h3>
+      <div class="post__text">{{markdown-to-html post.body}}</div>
       <div class="post__controls">
         <button {{action "deletePost" post}}>Delete Post</button>
       </div>
